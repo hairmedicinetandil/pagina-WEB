@@ -240,7 +240,6 @@ main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos a {
     border-radius: 10%;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 50px;
 }
 
 /*Ver mas*/
@@ -311,7 +310,7 @@ main .vermas .mostrar {
     z-index: 2;
     transform: translateX(-50%);
     user-select: none;
-    -webkit-user-drag: none;
+    -webkit-user-select: none;
 
 }
 
