@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: 'Poppins', sans-serif;
+    /*prueba*/
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    color: #4A3A2A;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+p {
+    color: #6E6A66;
+    font-weight: 300;
+}
+
+
+
+
+
+/*header*/
+header {
+    grid-area: header;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+header div img {
+    height: 11vh;
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+/*main*/
+main {
+    grid-area: main;
+    width: 100%;
+    overflow: hidden;
+}
+
+main .banner {
+    background-image: url('../images/Banner.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 89vh;
+}
+
+main .banner .info-banner {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+main .banner .info-banner h1 {
+    margin: 0;
+}
+
+main .banner .info-banner p {
+    color: #000;
+}
+
+main .banner .info-banner button {
+    border-radius: 100px;
+    border: 0;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+main .banner .info-banner button:hover {
+    background-color: green;
+}
+
+main .banner .info-banner a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Tarjetas*/
+main .tratamientos-main {
+    background-color: #F5EBE0;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+main .tratamientos-main h2 {
+    margin-top: 0;
+}
+
+main .tratamientos-main .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5EBE0;
+    align-items: center;
+    width: 100%;
+
+}
+
+main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos {
+    text-align: center;
+    background-color: white;
+    min-height: 20vh;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 100%;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos a {
+    text-decoration: none;
+    color: white;
+    background-color: #D2AE6D;
+    border-radius: 10%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px;
+}
+
+/*Ver mas*/
+main .vermas{
+    visibility:hidden;
+}
+main .vermas .mostrar{
+    visibility: visible;
+}
+
+/*Cirugia*/
+.implante-cirugia-main {
+    background-color: #ffffff;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.implante-cirugia-main .info-implante-cirugia-main {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-inline: 15%;
+}
+
+.implante-cirugia-main .info-implante-cirugia-main a {
+    border-radius: 100px;
+    border: 0;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    margin-bottom: 0;
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main .after {
+    clip-path: inset(0 50% 0 0);
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main .slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #fff;
+    cursor: ew-resize;
+    z-index: 2;
+    transform: translateX(-50%);
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.antesdespues-implante-cirugia-main .slider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/*Nosotros*/
+
+main .nosotros-main {
+    width: 100%;
+    background-color: #F5EBE0;
+    padding-top: 20px;
+    color: white;
+}
+
+main .nosotros-main .info {
+    text-align: center;
+    padding-inline: 25%;
+}
+
+main .nosotros-main .info h2 {
+    margin-top: 0;
+    font-size: xx-large;
+}
+
+main .nosotros-main .img-nosotros {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+main .nosotros-main .img-nosotros img {
+    width: 300px;
+    height: 200px;
+    border: white solid 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/*nuestro equipo*/
+
+main .nuestro-equipo {
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
+main .nuestro-equipo h2 {
+    font-size: xx-large;
+}
+
+
+
+main .nuestro-equipo .integrante {}
+
+
+main .nuestro-equipo .integrante img {
+    width: 30vh;
+    height: 40vh;
+    border: white solid 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+main .nuestro-equipo .integrante h3 {
+    margin: 0;
+}
+
+main .nuestro-equipo .integrante p {
+    margin-top: 0;
+}
+
+main .dudas-main {
+    background-color: #F5EBE0;
+}
+
+main .dudas-main h2 {
+    text-align: center;
+}
+
+main .dudas-main .pregunta .pregunta-titulo {
+    background: none;
+    color: #000;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: 300;
+
+}
+
+main .dudas-main .pregunta .pregunta-titulo:hover {
+    color: #D2AE6D;
+}
+
+main .dudas-main .pregunta .respuesta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    display: block;
+}
+.flecha {
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.flecha.girar {
+  transform: rotate(180deg);
+}
+
+
+/*footer*/
+
+.footer {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-legal {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    main .banner {
+        min-width: 100%;
+        align-items: start;
+    }
+
+    main .banner .info-banner {
+        margin-left: 20vh;
+    }
+
+    main .tratamientos-main .contenedor-tarjetas {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos {
+        max-width: 30vh;
+        min-height: 35vh;
+        margin-inline: 10px;
+    }
+
+    main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos img {
+        height: 8vh;
+        width: 8vh;
+        margin-bottom: 20px;
+    }
+
+    main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos h3 {
+        min-height: 8vh;
+        min-width: 4vh;
+        margin-bottom: 3vh;
+    }
+
+    main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos a {}
+
+
+    main .implante-cirugia-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 50vh;
+    }
+
+    main .implante-cirugia-main .info-implante-cirugia-main {
+        text-align: start;
+    }
+
+    main .implante-cirugia-main .info-implante-cirugia-main p {
+        margin-bottom: 50px;
+    }
+
+    .implante-cirugia-main .antesdespues-implante-cirugia-main img {
+        height: 90%;
+        width: 100%;
+    }
+
+    main .nosotros-main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .nosotros-main .info {
+        text-align: start;
+        padding-inline-start: 5%;
+        padding-inline-end: 0;
+    }
+
+    main .nosotros-main .img-nosotros {
+        height: 50vh;
+        margin-bottom: 0;
+    }
+
+    main .nosotros-main .img-nosotros img {
+        height: 90%;
+        width: 70%;
+    }
+
+    main .nuestro-equipo .integrantes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .nuestro-equipo .integrantes .integrante {
+        margin-inline: 20px;
+        width: 60vh;
+        height: 70vh;
+    }
+
+    main .nuestro-equipo .integrantes .integrante img {
+        width: 60%;
+        height: 70%;
+    }
+
+    main .dudas-main{
+        padding-bottom: 40px;
+    }
+    main .dudas-main h2{
+        text-align: start;
+        margin-left: 15px;
+    }
+    main .dudas-main .pregunta .respuesta{
+        margin-left: 10px;
+    }
+
+
+
+}
+
