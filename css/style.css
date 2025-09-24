@@ -1,3 +1,113 @@
+
+/* --- ESTILOS TRATAMIENTOS AL FINAL --- */
+
+.tratamientos-info {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(210, 174, 109, 0.07);
+    padding: 28px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid #f0e3c6;
+}
+.tratamientos-info > div {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5d6b8;
+}
+.tratamientos-info > div:last-child {
+    border-bottom: none;
+}
+.tratamientos-info h2 {
+    color: #D2AE6D;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.tratamientos-info h3 {
+    color: #4A3A2A;
+    font-size: 1.2rem;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.tratamientos-info p, .tratamientos-info li {
+    color: #6E6A66;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.tratamientos-info ul, .tratamientos-info ol {
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+.tratamientos-info ul li, .tratamientos-info ol li {
+    margin-bottom: 0.5em;
+}
+
+.cirugia-tratamiento {
+    max-width: 1100px;
+    margin: 64px auto 64px auto;
+    background: #f7f1e7;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 32px 0;
+    border: none;
+}
+.cirugia-tratamiento h2 {
+    color: #B88A44;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 10px;
+}
+.cirugia-tratamiento h3 {
+    color: #4A3A2A;
+    font-size: 1.25rem;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.cirugia-tratamiento p, .cirugia-tratamiento li {
+    color: #4A3A2A;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cirugia-tratamiento ul, .cirugia-tratamiento ol {
+    margin-left: 2.2em;
+    margin-bottom: 1.2em;
+}
+.cirugia-tratamiento ul li, .cirugia-tratamiento ol li {
+    margin-bottom: 0.7em;
+}
+.cirugia-tratamiento .destacado {
+    background: #fffbe7;
+    border-left: 5px solid #D2AE6D;
+    padding: 18px 20px;
+    margin: 32px 10px 0 10px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #B88A44;
+    font-weight: 600;
+}
+
+/* Botón volver */
+.btn-volver {
+    margin: 24px 0 0 16px;
+}
+.btn-volver a img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s;
+}
+.btn-volver a img:hover {
+    transform: scale(1.12) rotate(-10deg);
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 body {
@@ -12,8 +122,9 @@ body {
     font-family: 'Poppins', sans-serif;
     /*prueba*/
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -32,24 +143,110 @@ p {
 
 
 
-
+/*index*/
 
 /*header*/
 header {
     grid-area: header;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+    header .logo img {
+        height: 11vh;
+        width: 150px;
+    }
 
-header div img {
+    header .btn-menu button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    header .btn-menu button img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+header .logo img {
     height: 11vh;
     width: 150px;
+        
+
 }
 
+header .btn-menu button.girar {
+        background: #f5ebd8;
+}
 
+/*nav*/
 
+.nav {
 
+    position: absolute;
+    top: 70px;
+    /* Ajusta según la altura de tu header */
+    left: 0;
+    width: 100%;
+    background: #F5EBE0;
+        background: #e3d3b8;
+    z-index: 1000;
+    border-bottom: 2px solid #D2AE6D;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
 
+.nav.mostrar {
+
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav ul li {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    justify-content: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #4A3A2A;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    width: 100%;
+    text-align: center;
+}
+
+.nav ul li:hover {
+    background: #D2AE6D;
+    color: white;
+}
 
 
 
@@ -153,10 +350,11 @@ main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos a {
 }
 
 /*Ver mas*/
-main .vermas{
-    visibility:hidden;
+main .vermas {
+    visibility: hidden;
 }
-main .vermas .mostrar{
+
+main .vermas .mostrar {
     visibility: visible;
 }
 
@@ -284,7 +482,6 @@ main .nuestro-equipo h2 {
 
 
 
-main .nuestro-equipo .integrante {}
 
 
 main .nuestro-equipo .integrante img {
@@ -335,50 +532,57 @@ main .dudas-main .pregunta .respuesta {
     transition: max-height 0.5s ease;
     display: block;
 }
+
 .flecha {
-  display: inline-block;
-  margin-left: 10px;
-  transition: transform 0.3s ease;
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
 }
 
 .flecha.girar {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 
 /*footer*/
 
 .footer {
-  background-color: #f5f5f5;
-  color: #333;
-  padding: 40px 20px;
-  font-size: 0.9rem;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 40px 20px;
+    font-size: 0.9rem;
 }
 
 .footer-contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .footer-nav ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-nav a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 .footer-legal {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.8rem;
-  color: #777;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #777;
 }
 
+
+
+/*tratamientos*/
+.btn-volver {
+    margin: 20px;
+}
 
 
 
@@ -387,6 +591,76 @@ main .dudas-main .pregunta .respuesta {
 
 
 @media (min-width: 1024px) {
+    header {
+        grid-area: header;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    header .logo img {
+        height: 11vh;
+        width: 150px;
+    }
+
+    header .btn-menu button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    header .btn-menu button img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*nav*/
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #F5EBE0;
+        box-shadow: 0 4px 16px rgba(210, 174, 109, 0.15);
+        z-index: 1000;
+        border-bottom: 2px solid #D2AE6D;
+        font-family: 'Poppins', sans-serif;
+        height: 10vh;
+    }
+
+
+    .nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .nav ul li {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: #4A3A2A;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding: 8px 18px;
+        border-radius: 20px;
+    }
+
+
     main .banner {
         min-width: 100%;
         align-items: start;
@@ -421,7 +695,7 @@ main .dudas-main .pregunta .respuesta {
         margin-bottom: 3vh;
     }
 
-    main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos a {}
+
 
 
     main .implante-cirugia-main {
@@ -482,18 +756,19 @@ main .dudas-main .pregunta .respuesta {
         height: 70%;
     }
 
-    main .dudas-main{
+    main .dudas-main {
         padding-bottom: 40px;
     }
-    main .dudas-main h2{
+
+    main .dudas-main h2 {
         text-align: start;
         margin-left: 15px;
     }
-    main .dudas-main .pregunta .respuesta{
+
+    main .dudas-main .pregunta .respuesta {
         margin-left: 10px;
     }
 
 
 
 }
-
