@@ -12,21 +12,21 @@
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo-nombre.svg" alt="logo HairMedicine">
+      <img src="images/logo-nombre.svg" alt="Logo de HairMedicine, clínica de medicina capilar">
     </div>
     <div class="btn-menu">
-      <button id="btn-menu"><img src="images/icono-menu.png" alt="Menu"></button>
+      <button id="btn-menu"><img src="images/icono-menu.png" alt="Abrir menú de navegación"></button>
     </div>
   </header>
 
-  <nav class="nav">
+  <nav class="nav" aria-label="Navegación principal">
     <ul>
-      <li><a id="link-nav" href="#inicio">Inicio</a></li>
-      <li><a id="link-nav" href="#tratamientos">Tratamientos</a></li>
-      <li><a id="link-nav" href="#cirugia">Implante Capilar</a></li>
-      <li><a id="link-nav" href="#nosotros">Nosotros</a></li>
-      <li><a id="link-nav" href="#dudas">Dudas</a></li>
-      <li><a id="link-nav" href="#footer-contacto">Contacto</a></li>
+      <li><a class="link-nav" href="#inicio">Inicio</a></li>
+      <li><a class="link-nav" href="#tratamientos">Tratamientos</a></li>
+      <li><a class="link-nav" href="#cirugia">Implante Capilar</a></li>
+      <li><a class="link-nav" href="#nosotros">Nosotros</a></li>
+      <li><a class="link-nav" href="#dudas">Dudas</a></li>
+      <li><a class="link-nav" href="#footer-contacto">Contacto</a></li>
     </ul>
   </nav>
 
@@ -39,8 +39,7 @@
         <h1>Clinica de Medicina Capilar en Tandil</h1>
         <p>Mas de 15 de experiencia cuidando tu cabello</p>
         <p>Unico centro especializado 100% en medicina capilar</p>
-        <button><a href="https://wa.me/2494377718?text=Hola%20quiero%20más%20información"
-            target="_blank">Contactanos</a></button>
+        <a href="https://wa.me/2494377718?text=Hola%20quiero%20más%20información" target="_blank">Contactanos</a>
       </div>
     </div>
 
@@ -49,22 +48,22 @@
       <h2>Tratamientos</h2>
       <div class="contenedor-tarjetas">
         <div class="tarjetas-tratamientos">
-          <img src="images/tratamiento-sangre.png" alt="">
+          <img src="images/tratamiento-sangre.png" alt="Ilustración de tratamiento Plasma Rico en Plaquetas">
           <h3>Plasma rico en plaquetas</h3>
           <a id="btn-plasma" href="tratamientos.html#plasma-tratamiento">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
-          <img src="images/tratamiento-jeringa.png" alt="">
+          <img src="images/tratamiento-jeringa.png" alt="Ilustración de tratamiento Mesoterapia Capilar">
           <h3>Mesoterapia Capilar</h3>
           <a id="btn-mesoterapia" href="tratamientos.html#mesoterapia-tratamiento">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
-          <img src="images/tratamiento-frecuencias.png" alt="">
-          <h3>Alta Frecuancia Capilar</h3>
+          <img src="images/tratamiento-frecuencias.png" alt="Ilustración de tratamiento Alta Frecuencia Capilar">
+          <h3>Alta Frecuencia Capilar</h3>
           <a id="btn-frecuencia" href="tratamientos.html#frecuencia-tratamiento">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
-          <img src="images/tratamiento-suero.png" alt="">
+          <img src="images/tratamiento-suero.png" alt="Ilustración de tratamiento Sueroterapia">
           <h3>Sueroterapia</h3>
           <a id="btn-suero" href="tratamientos.html#suero-tratamiento">Mas info</a>
         </div>
@@ -79,8 +78,8 @@
         <a href="tratamientos.html#cirugia-tratamiento">Mas info</a>
       </div>
       <div class="antesdespues-implante-cirugia-main" id="comparison">
-        <img src="images/antes-cirugia.png" alt="Antes" class="before">
-        <img src="images/despues-cirugia.png" alt="Después" class="after">
+        <img src="images/antes-cirugia.png" alt="Foto de paciente antes del implante capilar" class="before">
+        <img src="images/despues-cirugia.png" alt="Foto de paciente después del implante capilar" class="after">
         <div class="slider" id="slider"></div>
       </div>
     </div>
@@ -93,7 +92,7 @@
           capilar.</p>
       </div>
       <div class="img-nosotros">
-        <img src="images/nosotros-main.png" alt="">
+        <img src="images/nosotros-main.png" alt="Consultorio de HairMedicine en Tandil">
       </div>
     </div>
 
@@ -101,12 +100,12 @@
       <h2>Nuestro Equipo</h2>
       <div class="integrantes">
         <div class="integrante">
-          <img src="images/equipo-alfre.png" alt="">
+          <img src="images/equipo-alfre.png" alt="Foto del Dr. Alfredo Maidana, Director Médico">
           <h3>Alfredo Maidana</h3>
           <p>Director Medico</p>
         </div>
         <div class="integrante">
-          <img src="images/equipo-lu.png" alt="">
+          <img src="images/equipo-lu.png" alt="Foto de Lucila Iturrioz, Instrumentadora Quirúrgica">
           <h3>Lucila Iturrioz</h3>
           <p>Instrumentadora Quirurgica</p>
         </div>
@@ -161,7 +160,7 @@
     <div class="footer-contenedor">
 
       <div class="footer-logo">
-        <img src="images/logo-nombre-footer.svg" alt="Clínica Capilar Tandil">
+        <img src="images/logo-nombre-footer.svg" alt="Logo de Clínica Capilar Tandil">
       </div>
 
 
@@ -185,9 +184,12 @@
 
 
       <div class="footer-redes">
-        <a href="https://www.facebook.com/people/Hair-Medicine-Tandil/61557163706609/" target="_blank"><img src="images/icono-facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/hairmedicinetandil/" target="_blank"><img src="images/icono-instagram.png" alt="Instagram"></a>
-        <a href="https://wa.me/2494377718?text=Hola%20quiero%20más%20información" target="_blank"><img src="images/icono-whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://www.facebook.com/people/Hair-Medicine-Tandil/61557163706609/" target="_blank"
+          rel="noopener noreferrer"><img src="images/icono-facebook.png" alt="Facebook Hair Medicine"></a>
+        <a href="https://www.instagram.com/hairmedicinetandil/" target="_blank" rel="noopener noreferrer"><img
+            src="images/icono-instagram.png" alt="Instagram Hair Medicine"></a>
+        <a href="https://wa.me/2494377718?text=Hola%20quiero%20más%20información" target="_blank"
+          rel="noopener noreferrer"><img src="images/icono-whatsapp.png" alt="WhatsApp Hair Medicine"></a>
       </div>
     </div>
 
