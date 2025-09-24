@@ -6,22 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HairMedicine</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/Logo.svg">
 </head>
 
 <body>
   <header>
-    <div>
+    <div class="logo">
       <img src="images/logo-nombre.svg" alt="logo HairMedicine">
     </div>
-
+    <div class="btn-menu">
+      <button id="btn-menu"><img src="images/icono-menu.png" alt="Menu"></button>
+    </div>
   </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a id="link-nav" href="#inicio">Inicio</a></li>
+      <li><a id="link-nav" href="#tratamientos">Tratamientos</a></li>
+      <li><a id="link-nav" href="#cirugia">Implante Capilar</a></li>
+      <li><a id="link-nav" href="#nosotros">Nosotros</a></li>
+      <li><a id="link-nav" href="#dudas">Dudas</a></li>
+      <li><a id="link-nav" href="#footer-contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+
+
   <main>
     <div id="inicio" class="banner">
       <div class="info-banner">
         <h1>Clinica de Medicina Capilar en Tandil</h1>
         <p>Mas de 15 de experiencia cuidando tu cabello</p>
         <p>Unico centro especializado 100% en medicina capilar</p>
-        <button><a href="https://wa.me/5491155551234?text=Hola%20quiero%20más%20información"
+        <button><a href="https://wa.me/2494377718?text=Hola%20quiero%20más%20información"
             target="_blank">Contactanos</a></button>
       </div>
     </div>
@@ -31,38 +49,34 @@
       <h2>Tratamientos</h2>
       <div class="contenedor-tarjetas">
         <div class="tarjetas-tratamientos">
-          <img src="images/tratamiento-jeringa.png" alt="">
+          <img src="images/tratamiento-sangre.png" alt="">
           <h3>Plasma rico en plaquetas</h3>
           <a id="btn-plasma" href="tratamientos.html#plasma-tratamiento">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
           <img src="images/tratamiento-jeringa.png" alt="">
           <h3>Mesoterapia Capilar</h3>
-          <a id="btn-mesoterapia"  href="tratamientos.html#mesoterapia-tratamiento">Mas info</a>
+          <a id="btn-mesoterapia" href="tratamientos.html#mesoterapia-tratamiento">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
           <img src="images/tratamiento-frecuencias.png" alt="">
           <h3>Alta Frecuancia Capilar</h3>
-          <a id="btn-frecuencia"  href="tratamientos.html#frecuencia-tratamiento">Mas info</a>
+          <a id="btn-frecuencia" href="tratamientos.html#frecuencia-tratamiento">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
           <img src="images/tratamiento-suero.png" alt="">
           <h3>Sueroterapia</h3>
-          <a id="btn-suero"  href="tratamientos.html#suero-tratamiento">Mas info</a>
+          <a id="btn-suero" href="tratamientos.html#suero-tratamiento">Mas info</a>
         </div>
       </div>
 
-    </div>
-
-    <div class="vermas">
-      <div><p id="texto-vermas"></p></div>
     </div>
 
     <div id="cirugia" class="implante-cirugia-main">
       <div class="info-implante-cirugia-main">
         <h2>Cirugia de Implante Capilar</h2>
         <p>Tecnica FUE-minimamente invasiva, resultados naturales y permanentes.</p>
-        <a href="https://wa.me/5491155551234?text=Hola%20quiero%20más%20información">Reserva consulta gratuita</a>
+        <a href="tratamientos.html#cirugia-tratamiento">Mas info</a>
       </div>
       <div class="antesdespues-implante-cirugia-main" id="comparison">
         <img src="images/antes-cirugia.png" alt="Antes" class="before">
@@ -86,16 +100,16 @@
     <div class="nuestro-equipo">
       <h2>Nuestro Equipo</h2>
       <div class="integrantes">
-              <div class="integrante">
-        <img src="images/equipo-alfre.png" alt="">
-        <h3>Alfredo Maidana</h3>
-        <p>Director Medico</p>
-      </div>
-      <div class="integrante">
-        <img src="images/equipo-lu.png" alt="">
-        <h3>Lucila Iturrioz</h3>
-        <p>Instrumentadora Quirurgica</p>
-      </div>
+        <div class="integrante">
+          <img src="images/equipo-alfre.png" alt="">
+          <h3>Alfredo Maidana</h3>
+          <p>Director Medico</p>
+        </div>
+        <div class="integrante">
+          <img src="images/equipo-lu.png" alt="">
+          <h3>Lucila Iturrioz</h3>
+          <p>Instrumentadora Quirurgica</p>
+        </div>
       </div>
 
     </div>
@@ -112,7 +126,8 @@
       </div>
 
       <div class="pregunta">
-        <button class="pregunta-titulo">¿Cuánto tiempo tarda en verse el resultado de un implante capilar?<span class="flecha">▼</span></button>
+        <button class="pregunta-titulo">¿Cuánto tiempo tarda en verse el resultado de un implante capilar?<span
+            class="flecha">▼</span></button>
         <div class="respuesta">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti, accusamus ratione, officia,
             voluptates architecto error corporis adipisci ad ullam sint quos quod? Modi laudantium quas nisi veniam
@@ -121,7 +136,8 @@
       </div>
 
       <div class="pregunta">
-        <button class="pregunta-titulo">¿Qué técnica se utiliza en la cirugía de implante capilar?<span class="flecha">▼</span></button>
+        <button class="pregunta-titulo">¿Qué técnica se utiliza en la cirugía de implante capilar?<span
+            class="flecha">▼</span></button>
         <div class="respuesta">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti, accusamus ratione, officia,
             voluptates architecto error corporis adipisci ad ullam sint quos quod? Modi laudantium quas nisi veniam
@@ -130,7 +146,8 @@
       </div>
 
       <div class="pregunta">
-        <button class="pregunta-titulo">¿Es necesario raparse completamente para realizar un implante capilar?<span class="flecha">▼</span></button>
+        <button class="pregunta-titulo">¿Es necesario raparse completamente para realizar un implante capilar?<span
+            class="flecha">▼</span></button>
         <div class="respuesta">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti, accusamus ratione, officia,
             voluptates architecto error corporis adipisci ad ullam sint quos quod? Modi laudantium quas nisi veniam
@@ -140,47 +157,48 @@
     </div>
 
   </main>
-<footer class="footer">
-  <div class="footer-contenedor">
-    
-    <div class="footer-logo">
-      <img src="images/logo-nombre-footer.svg" alt="Clínica Capilar Tandil">
+  <footer class="footer">
+    <div class="footer-contenedor">
+
+      <div class="footer-logo">
+        <img src="images/logo-nombre-footer.svg" alt="Clínica Capilar Tandil">
+      </div>
+
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#tratamientos">Tratamientos</a></li>
+          <li><a href="#cirugia">Implante Capilar</a></li>
+          <li><a href="#nosotros">Nuestro Equipo</a></li>
+          <li><a href="#dudas">Dudas</a></li>
+          <li><a href="#footer-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+
+      <div id="footer-contacto" class="footer-contacto">
+        <p>📍 Alem 1495,Tandil</p>
+        <p>📞 (0249) 377718</p>
+        <p>📧 hairmedicine@gmail.com</p>
+      </div>
+
+
+      <div class="footer-redes">
+        <a href="https://www.facebook.com/people/Hair-Medicine-Tandil/61557163706609/" target="_blank"><img src="images/icono-facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/hairmedicinetandil/" target="_blank"><img src="images/icono-instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/2494377718?text=Hola%20quiero%20más%20información" target="_blank"><img src="images/icono-whatsapp.png" alt="WhatsApp"></a>
+      </div>
     </div>
 
-    
-    <nav class="footer-nav">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#tratamientos">Tratamientos</a></li>
-        <li><a href="#cirugia">Implante Capilar</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#dudas">Dudas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
 
-    
-    <div class="footer-contacto">
-      <p>📍 Tandil, Buenos Aires</p>
-      <p>📞 (0249) 444-1234</p>
-      <p>📧 info@clinicacapilar.com.ar</p>
+    <div class="footer-legal">
+      <p>&copy; 2025 Clínica Capilar Tandil. Todos los derechos reservados.</p>
+      <p><a href="#privacidad">Política de privacidad</a></p>
     </div>
+  </footer>
 
-    
-    <div class="footer-redes">
-      <a href="#"><img src="images/icono-facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/icono-instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="images/icono-whatsapp.png" alt="WhatsApp"></a>
-    </div>
-  </div>
-
- 
-  <div class="footer-legal">
-    <p>&copy; 2025 Clínica Capilar Tandil. Todos los derechos reservados.</p>
-    <p><a href="#privacidad">Política de privacidad</a></p>
-  </div>
-</footer>
-
+  <script src="js/menu.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/script.js"></script>
   <script src="js/dudas.js"></script>
