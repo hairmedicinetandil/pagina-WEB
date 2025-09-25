@@ -153,24 +153,29 @@ main {
 }
 
 main .banner {
-    background-image: url('../images/Banner.png');
+    background-image: url('../images/Banner.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 50% 20%;
     max-width: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 89vh;
+    min-height: 60vh;
 }
 
 main .banner .info-banner {
     width: 100%;
     max-width: 300px;
     margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+    /* blanco semitransparente */
+    border-radius: 12px;
+    padding: 16px;
 }
 
 main .banner .info-banner h1 {
     margin: 0;
+
 }
 
 main .banner .info-banner p {
@@ -293,6 +298,7 @@ main .vermas .mostrar {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: top center;
 }
 
 .implante-cirugia-main .antesdespues-implante-cirugia-main .after {
@@ -373,13 +379,16 @@ main .nuestro-equipo h2 {
     font-size: xx-large;
 }
 
-
-
-
+main .nuestro-equipo .integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
 
 main .nuestro-equipo .integrante img {
     width: 30vh;
-    height: 40vh;
+    height: 45vh;
     border: white solid 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -477,8 +486,17 @@ main .dudas-main .pregunta .respuesta {
     margin: 20px;
 }
 
+.tratamientos-titulo-section {
+    text-align: center;
+    margin: 0;
+    font-size: 1.4rem;
+    color: #4A3A2A;
+    font-weight: 600;
+}
 
-/* --- ESTILOS TRATAMIENTOS AL FINAL --- */
+.tratamientos-titulo-section h2 {
+    margin: 0;
+}
 
 .tratamientos-info {
     max-width: 900px;
@@ -594,6 +612,21 @@ main .dudas-main .pregunta .respuesta {
     font-weight: 600;
 }
 
+/* Imágenes de tratamientos */
+.img-tratamiento {
+    width: 100%;
+    max-width: 100vh;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Botón volver */
 .btn-volver {
     margin: 24px 0 0 16px;
@@ -609,6 +642,65 @@ main .dudas-main .pregunta .respuesta {
     transform: scale(1.12) rotate(-10deg);
 }
 
+
+/* Carrusel de tratamientos */
+.carrousel-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto 32px auto;
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 16px 0 32px 0;
+}
+
+.carrousel-slides {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.carrousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.7s;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.carrousel-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carrousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.carrousel-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #d2ae6d55;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid #d2ae6d;
+}
+
+.carrousel-dot.active {
+    background: #D2AE6D;
+    transform: scale(1.18);
+}
 
 
 
@@ -684,10 +776,15 @@ main .dudas-main .pregunta .respuesta {
     main .banner {
         min-width: 100%;
         align-items: start;
+        min-height: 89vh;
     }
 
     main .banner .info-banner {
         margin-left: 20vh;
+    }
+
+    main .banner {
+        background-position: 50% 50%;
     }
 
     main .tratamientos-main .contenedor-tarjetas {
@@ -763,6 +860,7 @@ main .dudas-main .pregunta .respuesta {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     main .nuestro-equipo .integrantes .integrante {
@@ -789,6 +887,34 @@ main .dudas-main .pregunta .respuesta {
         margin-left: 10px;
     }
 
+    .tratamientos-titulo-section {
+        text-align: center;
+        margin: 0;
+        font-size: 2.5rem;
+        color: #4A3A2A;
+        font-weight: 600;
+    }
 
+    .tratamientos-titulo-section h2 {
+        margin: 0;
+    }
+
+    .carrousel-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 10px auto 32px auto;
+        position: relative;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        padding: 16px 0 32px 0;
+    }
+
+    .carrousel-slides {
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
 
 }
