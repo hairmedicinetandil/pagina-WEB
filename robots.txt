@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hairmedicine.com.ar/sitemap.xml
