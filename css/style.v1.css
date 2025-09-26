@@ -389,7 +389,7 @@ main .nuestro-equipo .integrantes {
 main .nuestro-equipo .integrante img {
     width: 30vh;
     height: 45vh;
-    border: white solid 10px;
+    border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -466,6 +466,7 @@ main .dudas-main .pregunta .respuesta {
     overflow: hidden;
     transition: max-height 0.5s ease;
     display: block;
+    color: #6E6A66;
 }
 
 .flecha {
@@ -724,7 +725,29 @@ main .dudas-main .pregunta .respuesta {
 }
 
 
+.linea-productos .productos-container .producto img {
+    width: 200px;
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
 
+.linea-productos .productos-container .producto img:hover {
+    transform: scale(1.05);
+}
+.linea-productos .productos-container .producto h3 {
+    margin: 8px 0 0 0;
+    font-size: 1rem;
+    color: #4A3A2A;
+}
+.linea-productos .productos-container .producto p {
+    margin: 4px 0 0 0;
+    font-size: 0.9rem;
+    color: #6E6A66;
+    font-weight: 300;
+    text-align: center;
+}
 
 
 
@@ -1003,4 +1026,37 @@ main .dudas-main .pregunta .respuesta {
         height: 600px;
     }
 
+    main .linea-productos .productos-container {
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main .linea-productos .productos-container .producto {
+        margin-bottom: 20px;
+        width: 33%;
+    }
+
+    main .linea-productos .productos-container .producto h3 {
+        font-size: 1.2rem;
+        height: 40px;
+    }
+
+    main .linea-productos .productos-container .producto p {
+        font-size: 1rem;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+
+    main .linea-productos .productos-container .producto img {
+        width: 250px;
+        height: 320px;
+
+}
+
+main .linea-productos .productos-container .producto hr{
+    display: none;
+}
 }
