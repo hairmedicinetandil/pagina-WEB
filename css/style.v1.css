@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+:root {
+    --sand: #D8BCA9;
+    --blue-gray: #577C8E;
+    --ivory: #F4EFEB;
+    --charcoal: #4D4D4D;
+    --text-soft: #6E6A66;
+    --white: #ffffff;
+}
+
 body {
     margin: 0;
     display: grid;
@@ -10,6 +19,8 @@ body {
         "main"
         "footer";
     font-family: 'Poppins', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
 }
 
 html {
@@ -19,14 +30,14 @@ html {
 h1,
 h2,
 h3 {
-    color: #4A3A2A;
+    color: var(--charcoal);
     font-weight: 300;
     line-height: 1.3;
     letter-spacing: 0.5px;
 }
 
 p {
-    color: #6E6A66;
+    color: var(--text-soft);
     font-weight: 300;
 }
 
@@ -85,10 +96,9 @@ header .btn-menu button.girar {
     /* Ajusta según la altura de tu header */
     left: 0;
     width: 100%;
-    background: #F5EBE0;
-    background: #e3d3b8;
+    background: var(--ivory);
     z-index: 1000;
-    border-bottom: 2px solid #D2AE6D;
+    border-bottom: 2px solid var(--sand);
     font-family: 'Poppins', sans-serif;
     opacity: 0;
     visibility: hidden;
@@ -127,7 +137,7 @@ header .btn-menu button.girar {
 
 .nav ul li a {
     text-decoration: none;
-    color: #4A3A2A;
+    color: var(--charcoal);
     font-weight: 500;
     font-size: 1.1em;
     padding: 8px 18px;
@@ -138,8 +148,8 @@ header .btn-menu button.girar {
 }
 
 .nav ul li:hover {
-    background: #D2AE6D;
-    color: white;
+    background: var(--blue-gray);
+    color: var(--white);
 }
 
 
@@ -205,7 +215,7 @@ main .banner .info-banner a {
 
 /*Tarjetas*/
 main .tratamientos-main {
-    background-color: #F5EBE0;
+    background-color: var(--ivory);
     text-align: center;
     padding-top: 5vh;
 }
@@ -217,7 +227,7 @@ main .tratamientos-main h2 {
 main .tratamientos-main .contenedor-tarjetas {
     display: flex;
     flex-direction: column;
-    background-color: #F5EBE0;
+    background-color: var(--ivory);
     align-items: center;
     width: 100%;
 
@@ -225,7 +235,7 @@ main .tratamientos-main .contenedor-tarjetas {
 
 main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos {
     text-align: center;
-    background-color: white;
+    background-color: var(--white);
     min-height: 20vh;
     width: 50%;
     margin-top: 10px;
@@ -240,8 +250,8 @@ main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos {
 
 main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos a {
     text-decoration: none;
-    color: white;
-    background-color: #D2AE6D;
+    color: var(--white);
+    background-color: var(--blue-gray);
     border-radius: 10%;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -338,9 +348,9 @@ main .vermas .mostrar {
 
 main .nosotros-main {
     width: 100%;
-    background-color: #F5EBE0;
+    background-color: var(--ivory);
     padding-top: 20px;
-    color: white;
+    color: var(--white);
 }
 
 main .nosotros-main .info {
@@ -435,7 +445,7 @@ main .nuestro-consultorio .img-consultorio img {
 
 /*DUDAS*/
 main .dudas-main {
-    background-color: #F5EBE0;
+    background-color: var(--ivory);
 }
 
 main .dudas-main h2 {
@@ -458,7 +468,7 @@ main .dudas-main .pregunta .pregunta-titulo {
 }
 
 main .dudas-main .pregunta .pregunta-titulo:hover {
-    color: #D2AE6D;
+    color: var(--sand);
 }
 
 main .dudas-main .pregunta .respuesta {
@@ -483,8 +493,8 @@ main .dudas-main .pregunta .respuesta {
 /*footer*/
 
 .footer {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: var(--ivory);
+    color: var(--charcoal);
     padding: 40px 20px;
     font-size: 0.9rem;
 }
@@ -496,6 +506,19 @@ main .dudas-main .pregunta .respuesta {
     gap: 30px;
 }
 
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    display: block;
+    width: 220px;
+    height: auto;
+    max-width: 100%;
+}
+
 .footer-nav ul {
     list-style: none;
     padding: 0;
@@ -503,14 +526,18 @@ main .dudas-main .pregunta .respuesta {
 
 .footer-nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--charcoal);
+}
+
+.footer-redes img{
+    width:20px;
 }
 
 .footer-legal {
     text-align: center;
     margin-top: 20px;
     font-size: 0.8rem;
-    color: #777;
+    color: var(--charcoal);
 }
 
 
@@ -535,7 +562,7 @@ main .dudas-main .pregunta .respuesta {
     text-align: center;
     margin: 0;
     font-size: 1.4rem;
-    color: #4A3A2A;
+    color: var(--blue-gray);
     font-weight: 600;
 }
 
@@ -566,14 +593,14 @@ main .dudas-main .pregunta .respuesta {
 }
 
 .tratamientos-info h2 {
-    color: #D2AE6D;
+    color: var(--blue-gray);
     font-size: 2rem;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
 .tratamientos-info h3 {
-    color: #4A3A2A;
+    color: var(--blue-gray);
     font-size: 1.2rem;
     margin-top: 18px;
     margin-bottom: 8px;
@@ -609,7 +636,7 @@ main .dudas-main .pregunta .respuesta {
 }
 
 .cirugia-tratamiento h2 {
-    color: #B88A44;
+    color: var(--blue-gray);
     font-size: 2.2rem;
     margin-bottom: 18px;
     font-weight: 700;
@@ -618,7 +645,7 @@ main .dudas-main .pregunta .respuesta {
 }
 
 .cirugia-tratamiento h3 {
-    color: #4A3A2A;
+    color: var(--blue-gray);
     font-size: 1.25rem;
     margin-top: 22px;
     margin-bottom: 10px;
@@ -648,12 +675,12 @@ main .dudas-main .pregunta .respuesta {
 
 .cirugia-tratamiento .destacado {
     background: #fffbe7;
-    border-left: 5px solid #D2AE6D;
+    border-left: 5px solid var(--sand);
     padding: 18px 20px;
     margin: 32px 10px 0 10px;
     border-radius: 12px;
     font-size: 1.1rem;
-    color: #B88A44;
+    color: var(--blue-gray);
     font-weight: 600;
 }
 
@@ -701,7 +728,7 @@ main .dudas-main .pregunta .respuesta {
     text-align: center;
 }   
 .linea-productos h2 {
-    color: #B88A44;
+    color: var(--blue-gray);
     font-size: 2.2rem;
     margin-bottom: 18px;
     font-weight: 700;
@@ -739,7 +766,7 @@ main .dudas-main .pregunta .respuesta {
 .linea-productos .productos-container .producto h3 {
     margin: 8px 0 0 0;
     font-size: 1rem;
-    color: #4A3A2A;
+    color: var(--blue-gray);
 }
 .linea-productos .productos-container .producto p {
     margin: 4px 0 0 0;
@@ -803,11 +830,11 @@ main .dudas-main .pregunta .respuesta {
     background: #d2ae6d55;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
-    border: 2px solid #d2ae6d;
+    border: 2px solid #577c8e;
 }
 
 .carrousel-dot.active {
-    background: #D2AE6D;
+    background: #577c8e;
     transform: scale(1.18);
 }
 
@@ -1000,7 +1027,7 @@ main .dudas-main .pregunta .respuesta {
         text-align: center;
         margin: 0;
         font-size: 2.5rem;
-        color: #4A3A2A;
+        color: var(--blue-gray);
         font-weight: 600;
     }
 
